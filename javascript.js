@@ -1,19 +1,19 @@
 // COMPLETAR DATOS INGRESO:
 
-let nombre = '';
-let apellido = '';
-let edad = '';
+// let nombre = '';
+// let apellido = '';
+// let edad = '';
 
-while (nombre == "" || apellido == "" || edad == "") {
+// while (nombre == "" || apellido == "" || edad == "") {
 
-    nombre = prompt ("Ingresa tu nombre"); 
-    if ( nombre !=''){
-        apellido = prompt ("Ingresa tu apellido");
-        }
-        if (apellido !=''){
-        edad = prompt ("Ingresa tu edad");
-        }
-}
+//     nombre = prompt ("Ingresa tu nombre"); 
+//     if ( nombre !=''){
+//         apellido = prompt ("Ingresa tu apellido");
+//         }
+//         if (apellido !=''){
+//         edad = prompt ("Ingresa tu edad");
+//         }
+// }
 
   
 
@@ -80,15 +80,22 @@ while (nombre == "" || apellido == "" || edad == "") {
 
 // FUNCIONES
 
-// function saludoBienvenida(usuario, registroAlDia) {
-//     let bienvenida = '';
-//     if (registroAlDia == true) {
-//         bienvenida = "Hola " + usuario + " tienes un descuento por tener tu registro al día";
-//     } else {
-//         bienvenida = "Hola " + usuario + " tendrás un recargo por registro vencido";
-//     }
-//     return bienvenida
-// }
+function saludoBienvenida(usuario, registroAlDia) {
+    let bienvenida = '';
 
-// let saludo1 = bienvenida('Edu', false);
-// let saludo2 = bienvenida('Jaz', true);
+    if (registroAlDia == true) {
+        bienvenida = "Hola " + usuario + " tienes un descuento por tener tu registro al día";
+    } else {
+        bienvenida = "Hola " + usuario + " tendrás un recargo por registro vencido";
+    }
+    return bienvenida
+}
+
+let avisoAlDeuda = saludoBienvenida('Edu', false);
+let avisoAlDia = saludoBienvenida('Jaz', true);
+
+console.log(avisoAlDeuda)
+console.log(avisoAlDia)
+
+// OBJETOS
+
