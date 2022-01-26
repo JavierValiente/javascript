@@ -33,7 +33,15 @@ for ( let i = 1; i <= 10; i++){
     alert(nombre + " tu turno es el N° " + i)
 }
 
+// SI INGRRSA PATENTE "XXX123" TIENE PEDIDO CAPTURA Y SE CANCELA EL PROCESO: (El dia de mañana una lista en una base?)
 
+let pedidoCaptura = '';
+
+while (pedidoCaptura != "XXX123") {
+
+    pedidoCaptura = prompt ("Ingrese su patente")
+
+}
 
 
 // FUNCIONES
